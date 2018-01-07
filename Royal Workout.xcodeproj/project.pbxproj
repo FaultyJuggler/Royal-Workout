@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DCB712E200295C1006ADCB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB712D200295C1006ADCB1 /* AppDelegate.swift */; };
+		5DCB7130200295C1006ADCB1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB712F200295C1006ADCB1 /* RootViewController.swift */; };
+		5DCB7132200295C1006ADCB1 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB7131200295C1006ADCB1 /* DataViewController.swift */; };
+		5DCB7134200295C1006ADCB1 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB7133200295C1006ADCB1 /* ModelController.swift */; };
+		5DCB7137200295C1006ADCB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCB7135200295C1006ADCB1 /* Main.storyboard */; };
+		5DCB7139200295C1006ADCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCB7138200295C1006ADCB1 /* Assets.xcassets */; };
+		5DCB713C200295C1006ADCB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCB713A200295C1006ADCB1 /* LaunchScreen.storyboard */; };
+		5DCB7147200295C1006ADCB1 /* Royal_WorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB7146200295C1006ADCB1 /* Royal_WorkoutTests.swift */; };
+		5DCB7152200295C1006ADCB1 /* Royal_WorkoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB7151200295C1006ADCB1 /* Royal_WorkoutUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DCB7143200295C1006ADCB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DCB7122200295C1006ADCB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DCB7129200295C1006ADCB1;
+			remoteInfo = "Royal Workout";
+		};
+		5DCB714E200295C1006ADCB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DCB7122200295C1006ADCB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DCB7129200295C1006ADCB1;
+			remoteInfo = "Royal Workout";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5DCB712A200295C1006ADCB1 /* Royal Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Royal Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCB712D200295C1006ADCB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DCB712F200295C1006ADCB1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5DCB7131200295C1006ADCB1 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		5DCB7133200295C1006ADCB1 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		5DCB7136200295C1006ADCB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DCB7138200295C1006ADCB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DCB713B200295C1006ADCB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DCB713D200295C1006ADCB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCB7142200295C1006ADCB1 /* Royal WorkoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Royal WorkoutTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCB7146200295C1006ADCB1 /* Royal_WorkoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Royal_WorkoutTests.swift; sourceTree = "<group>"; };
+		5DCB7148200295C1006ADCB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCB714D200295C1006ADCB1 /* Royal WorkoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Royal WorkoutUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCB7151200295C1006ADCB1 /* Royal_WorkoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Royal_WorkoutUITests.swift; sourceTree = "<group>"; };
+		5DCB7153200295C1006ADCB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DCB7127200295C1006ADCB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCB713F200295C1006ADCB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCB714A200295C1006ADCB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DCB7121200295C1006ADCB1 = {
+			isa = PBXGroup;
+			children = (
+				5DCB712C200295C1006ADCB1 /* Royal Workout */,
+				5DCB7145200295C1006ADCB1 /* Royal WorkoutTests */,
+				5DCB7150200295C1006ADCB1 /* Royal WorkoutUITests */,
+				5DCB712B200295C1006ADCB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DCB712B200295C1006ADCB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DCB712A200295C1006ADCB1 /* Royal Workout.app */,
+				5DCB7142200295C1006ADCB1 /* Royal WorkoutTests.xctest */,
+				5DCB714D200295C1006ADCB1 /* Royal WorkoutUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DCB712C200295C1006ADCB1 /* Royal Workout */ = {
+			isa = PBXGroup;
+			children = (
+				5DCB712D200295C1006ADCB1 /* AppDelegate.swift */,
+				5DCB712F200295C1006ADCB1 /* RootViewController.swift */,
+				5DCB7131200295C1006ADCB1 /* DataViewController.swift */,
+				5DCB7133200295C1006ADCB1 /* ModelController.swift */,
+				5DCB7135200295C1006ADCB1 /* Main.storyboard */,
+				5DCB7138200295C1006ADCB1 /* Assets.xcassets */,
+				5DCB713A200295C1006ADCB1 /* LaunchScreen.storyboard */,
+				5DCB713D200295C1006ADCB1 /* Info.plist */,
+			);
+			path = "Royal Workout";
+			sourceTree = "<group>";
+		};
+		5DCB7145200295C1006ADCB1 /* Royal WorkoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DCB7146200295C1006ADCB1 /* Royal_WorkoutTests.swift */,
+				5DCB7148200295C1006ADCB1 /* Info.plist */,
+			);
+			path = "Royal WorkoutTests";
+			sourceTree = "<group>";
+		};
+		5DCB7150200295C1006ADCB1 /* Royal WorkoutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DCB7151200295C1006ADCB1 /* Royal_WorkoutUITests.swift */,
+				5DCB7153200295C1006ADCB1 /* Info.plist */,
+			);
+			path = "Royal WorkoutUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DCB7129200295C1006ADCB1 /* Royal Workout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCB7156200295C1006ADCB1 /* Build configuration list for PBXNativeTarget "Royal Workout" */;
+			buildPhases = (
+				5DCB7126200295C1006ADCB1 /* Sources */,
+				5DCB7127200295C1006ADCB1 /* Frameworks */,
+				5DCB7128200295C1006ADCB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Royal Workout";
+			productName = "Royal Workout";
+			productReference = 5DCB712A200295C1006ADCB1 /* Royal Workout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DCB7141200295C1006ADCB1 /* Royal WorkoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCB7159200295C1006ADCB1 /* Build configuration list for PBXNativeTarget "Royal WorkoutTests" */;
+			buildPhases = (
+				5DCB713E200295C1006ADCB1 /* Sources */,
+				5DCB713F200295C1006ADCB1 /* Frameworks */,
+				5DCB7140200295C1006ADCB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DCB7144200295C1006ADCB1 /* PBXTargetDependency */,
+			);
+			name = "Royal WorkoutTests";
+			productName = "Royal WorkoutTests";
+			productReference = 5DCB7142200295C1006ADCB1 /* Royal WorkoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DCB714C200295C1006ADCB1 /* Royal WorkoutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCB715C200295C1006ADCB1 /* Build configuration list for PBXNativeTarget "Royal WorkoutUITests" */;
+			buildPhases = (
+				5DCB7149200295C1006ADCB1 /* Sources */,
+				5DCB714A200295C1006ADCB1 /* Frameworks */,
+				5DCB714B200295C1006ADCB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DCB714F200295C1006ADCB1 /* PBXTargetDependency */,
+			);
+			name = "Royal WorkoutUITests";
+			productName = "Royal WorkoutUITests";
+			productReference = 5DCB714D200295C1006ADCB1 /* Royal WorkoutUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DCB7122200295C1006ADCB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = BetterEveryDay;
+				TargetAttributes = {
+					5DCB7129200295C1006ADCB1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5DCB7141200295C1006ADCB1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5DCB7129200295C1006ADCB1;
+					};
+					5DCB714C200295C1006ADCB1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5DCB7129200295C1006ADCB1;
+					};
+				};
+			};
+			buildConfigurationList = 5DCB7125200295C1006ADCB1 /* Build configuration list for PBXProject "Royal Workout" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DCB7121200295C1006ADCB1;
+			productRefGroup = 5DCB712B200295C1006ADCB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DCB7129200295C1006ADCB1 /* Royal Workout */,
+				5DCB7141200295C1006ADCB1 /* Royal WorkoutTests */,
+				5DCB714C200295C1006ADCB1 /* Royal WorkoutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DCB7128200295C1006ADCB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCB713C200295C1006ADCB1 /* LaunchScreen.storyboard in Resources */,
+				5DCB7139200295C1006ADCB1 /* Assets.xcassets in Resources */,
+				5DCB7137200295C1006ADCB1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCB7140200295C1006ADCB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCB714B200295C1006ADCB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DCB7126200295C1006ADCB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCB7130200295C1006ADCB1 /* RootViewController.swift in Sources */,
+				5DCB7134200295C1006ADCB1 /* ModelController.swift in Sources */,
+				5DCB7132200295C1006ADCB1 /* DataViewController.swift in Sources */,
+				5DCB712E200295C1006ADCB1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCB713E200295C1006ADCB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCB7147200295C1006ADCB1 /* Royal_WorkoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCB7149200295C1006ADCB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCB7152200295C1006ADCB1 /* Royal_WorkoutUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DCB7144200295C1006ADCB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DCB7129200295C1006ADCB1 /* Royal Workout */;
+			targetProxy = 5DCB7143200295C1006ADCB1 /* PBXContainerItemProxy */;
+		};
+		5DCB714F200295C1006ADCB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DCB7129200295C1006ADCB1 /* Royal Workout */;
+			targetProxy = 5DCB714E200295C1006ADCB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DCB7135200295C1006ADCB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DCB7136200295C1006ADCB1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DCB713A200295C1006ADCB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DCB713B200295C1006ADCB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DCB7154200295C1006ADCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DCB7155200295C1006ADCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DCB7157200295C1006ADCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Royal Workout/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bettereveryday.Royal-Workout";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DCB7158200295C1006ADCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Royal Workout/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bettereveryday.Royal-Workout";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DCB715A200295C1006ADCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Royal WorkoutTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bettereveryday.Royal-WorkoutTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Royal Workout.app/Royal Workout";
+			};
+			name = Debug;
+		};
+		5DCB715B200295C1006ADCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Royal WorkoutTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bettereveryday.Royal-WorkoutTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Royal Workout.app/Royal Workout";
+			};
+			name = Release;
+		};
+		5DCB715D200295C1006ADCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Royal WorkoutUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bettereveryday.Royal-WorkoutUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Royal Workout";
+			};
+			name = Debug;
+		};
+		5DCB715E200295C1006ADCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Royal WorkoutUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bettereveryday.Royal-WorkoutUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Royal Workout";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DCB7125200295C1006ADCB1 /* Build configuration list for PBXProject "Royal Workout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCB7154200295C1006ADCB1 /* Debug */,
+				5DCB7155200295C1006ADCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCB7156200295C1006ADCB1 /* Build configuration list for PBXNativeTarget "Royal Workout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCB7157200295C1006ADCB1 /* Debug */,
+				5DCB7158200295C1006ADCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCB7159200295C1006ADCB1 /* Build configuration list for PBXNativeTarget "Royal WorkoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCB715A200295C1006ADCB1 /* Debug */,
+				5DCB715B200295C1006ADCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCB715C200295C1006ADCB1 /* Build configuration list for PBXNativeTarget "Royal WorkoutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCB715D200295C1006ADCB1 /* Debug */,
+				5DCB715E200295C1006ADCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DCB7122200295C1006ADCB1 /* Project object */;
+}
