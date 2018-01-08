@@ -19,6 +19,8 @@ class DataViewController: UIViewController {
     @IBOutlet weak var cardioDisplay: UILabel!
     @IBOutlet weak var cardioActivityDisplay: UILabel!
     
+    let sharedDefaults = UserDefaults(suiteName: "group.com.better.royal")
+    
     var dataObject: String = ""
     let pushups = 10
     let situps = 15
@@ -41,10 +43,12 @@ class DataViewController: UIViewController {
     var currentBikeTime = 0
     
     var startDate = Date()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        updateCurrentWorkoutCounts()
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,14 +67,7 @@ class DataViewController: UIViewController {
         let userCalendar = Calendar.current
         let currentDate = Date()
         let weekday = Calendar.current.component(.weekday, from: currentDate)
-        let daysSince = userCalendar.dateComponents([.day],
-                                                    from: startDate,
-                                                    to: currentDate)
-        daysSince.day!
-        
-        let weeksSince = userCalendar.dateComponents([.weekOfYear],
-                                                                 from: startDate,
-                                                                 to: currentDate)
+        let weeksSince = userCalendar.dateComponents([.weekOfYear], from: startDate, to: currentDate)
         let weekCount = weeksSince.weekOfYear!
         
         if( weekCount > 2 )
@@ -87,24 +84,39 @@ class DataViewController: UIViewController {
             self.dipsDisplay.text = "\(currentDips)"
             self.burpeesDisplay.text = "\(currentBurpees)"
             
+            sharedDefaults?.setValue("\(currentPushups)", forKey: "pushups")
+            sharedDefaults?.setValue("\(currentSitups)", forKey: "situps")
+            sharedDefaults?.setValue("\(currentDips)", forKey: "dips")
+            sharedDefaults?.setValue("\(currentBurpees)", forKey: "burpees")
+            
+            currentRunTime = runswim + addMins*multiplier
+            currentBikeTime = bike + addMins*multiplier
+            
+            
+            
             if( runDays.contains(weekday) )
             {
-                currentRunTime = runswim + addMins*multiplier
-                
                 self.cardioActivityDisplay.text = "Run"
                 self.cardioDisplay.text = "\(currentRunTime)"
+                
+                sharedDefaults?.setValue("Run", forKey: "cardioAction")
+                sharedDefaults?.setValue("\(currentRunTime)", forKey: "cardioTime")
             }
             else if( swimDays.contains(weekday) )
             {
-                currentRunTime = runswim + addMins*multiplier
-                currentBikeTime = bike + addMins*multiplier
                 self.cardioActivityDisplay.text = "Bike or Swim"
                 self.cardioDisplay.text = "\(currentBikeTime) \\ \(currentRunTime)"
+                
+                sharedDefaults?.setValue("Bike or Swim", forKey: "cardioAction")
+                sharedDefaults?.setValue("\(currentBikeTime) \\ \(currentRunTime)", forKey: "cardioTime")
             }
             else
             {
                 self.cardioActivityDisplay.text = "Skip Cardio"
                 self.cardioDisplay.text = " "
+                
+                sharedDefaults?.setValue("Skip Cardio", forKey: "cardioAction")
+                sharedDefaults?.setValue(" ", forKey: "cardioTime")
             }
         }
         else
@@ -114,20 +126,34 @@ class DataViewController: UIViewController {
             self.dipsDisplay.text = "\(dips)"
             self.burpeesDisplay.text = "\(burpees)"
             
+            sharedDefaults?.setValue("\(pushups)", forKey: "pushups")
+            sharedDefaults?.setValue("\(situps)", forKey: "situps")
+            sharedDefaults?.setValue("\(dips)", forKey: "dips")
+            sharedDefaults?.setValue("\(burpees)", forKey: "burpees")
+            
             if( runDays.contains(weekday) )
             {
                 self.cardioActivityDisplay.text = "Run"
                 self.cardioDisplay.text = "\(runswim)"
+                
+                sharedDefaults?.setValue("Run", forKey: "cardioAction")
+                sharedDefaults?.setValue("\(runswim)", forKey: "cardioTime")
             }
             else if( swimDays.contains(weekday) )
             {
                 self.cardioActivityDisplay.text = "Bike or Swim"
                 self.cardioDisplay.text = "\(bike) or \(runswim)"
+                
+                sharedDefaults?.setValue("Bike or Swim", forKey: "cardioAction")
+                sharedDefaults?.setValue("\(bike) or \(runswim)", forKey: "cardioTime")
             }
             else
             {
                 self.cardioActivityDisplay.text = "Skip Cardio"
                 self.cardioDisplay.text = " "
+                
+                sharedDefaults?.setValue("Skip Cardio", forKey: "cardioAction")
+                sharedDefaults?.setValue(" ", forKey: "cardioTime")
             }
         }
         

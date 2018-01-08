@@ -22,12 +22,35 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        updateWorkoutCounts()
+    }
+    
+    func updateWorkoutCounts()
+    {
+        let sharedDefaults = UserDefaults.init(suiteName: "group.com.better.royal")
+        if( sharedDefaults?.value(forKey: "pushups") != nil )
+        {
+            pushupDisplay.text = sharedDefaults?.value(forKey: "pushups") as! String
+            situpDisplay.text = sharedDefaults?.value(forKey: "situps") as! String
+            dipDisplay.text = sharedDefaults?.value(forKey: "dips") as! String
+            burpeeDisplay.text = sharedDefaults?.value(forKey: "burpees") as! String
+            cardioDisplay.text = sharedDefaults?.value(forKey: "cardioTime") as! String
+            cardioActivityLabel.text = sharedDefaults?.value(forKey: "cardioAction") as! String
+        }
+        else
+        {
+            pushupDisplay.text = " "
+            situpDisplay.text = " "
+            dipDisplay.text = " "
+            burpeeDisplay.text = " "
+            cardioActivityLabel.text = "Set your"
+            cardioDisplay.text = "start date"
+        }
         
     }
     
